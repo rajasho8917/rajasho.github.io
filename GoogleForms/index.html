@@ -135,5 +135,24 @@
       <span>Advertising &nbsp; · &nbsp; Business &nbsp; · &nbsp; About &nbsp; · &nbsp; Privacy</span>
     </footer>
   </div>
+  <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DgL0000054uf3',
+				'GitHub_Messaging',
+				'https://orgfarm-e017e685b7-dev-ed.develop.my.site.com/ESWGitHubMessaging1759901169587',
+				{
+					scrt2URL: 'https://orgfarm-e017e685b7-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-e017e685b7-dev-ed.develop.my.site.com/ESWGitHubMessaging1759901169587/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html>
